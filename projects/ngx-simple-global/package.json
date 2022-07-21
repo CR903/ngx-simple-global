@@ -1,6 +1,6 @@
 {
   "name": "ngx-simple-global",
-  "version": "12.2.17",
+  "version": "12.2.19",
   "peerDependencies": {
     "@angular/common": "~12.2.17",
     "@angular/core": "~12.2.17"
