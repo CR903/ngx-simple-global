@@ -1,0 +1,32 @@
+{
+  "name": "ngx-simple-global",
+  "version": "12.2.17",
+  "peerDependencies": {
+    "@angular/common": "~12.2.17",
+    "@angular/core": "~12.2.17"
+  },
+  "description": "Angular simple global variable service",
+  "license": "MIT",
+  "author": "Chour (https://github.com/CR903)",
+  "keywords": [
+    "angular",
+    "component",
+    "example",
+    "global",
+    "ng",
+    "ngx",
+    "simple"
+  ],
+  "bugs": {
+    "url": "https://github.com/CR903/ngx-simple-global/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CR903/ngx-simple-global.git"
+  },
+  "homepage": "https://github.com/CR903/ngx-simple-global#readme",
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

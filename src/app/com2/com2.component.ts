@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SimpleGlobal } from 'ng2-simple-global';
+import { SimpleGlobal } from 'ngx-simple-global';
 
 @Component({
 	selector: 'app-com2',

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng2-simple-global-lib": {
+    "ngx-simple-global-lib": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng2-simple-global-lib",
+            "outputPath": "dist/ngx-simple-global-lib",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng2-simple-global-lib:build"
+            "browserTarget": "ngx-simple-global-lib:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ng2-simple-global-lib:build:production"
+              "browserTarget": "ngx-simple-global-lib:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng2-simple-global-lib:build"
+            "browserTarget": "ngx-simple-global-lib:build"
           }
         },
         "test": {
@@ -110,48 +110,48 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ng2-simple-global-lib:serve"
+            "devServerTarget": "ngx-simple-global-lib:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ng2-simple-global-lib:serve:production"
+              "devServerTarget": "ngx-simple-global-lib:serve:production"
             }
           }
         }
       }
     },
-    "ng2-simple-global": {
+    "ngx-simple-global": {
       "projectType": "library",
-      "root": "projects/ng2-simple-global",
-      "sourceRoot": "projects/ng2-simple-global/src",
+      "root": "projects/ngx-simple-global",
+      "sourceRoot": "projects/ngx-simple-global/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ng2-simple-global/tsconfig.lib.json",
-            "project": "projects/ng2-simple-global/ng-package.json"
+            "tsConfig": "projects/ngx-simple-global/tsconfig.lib.json",
+            "project": "projects/ngx-simple-global/ng-package.json"
           }
         ,          "configurations": {
             "production": {
-              "tsConfig": "projects/ng2-simple-global/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-simple-global/tsconfig.lib.prod.json"
             }
           }
 },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ng2-simple-global/src/test.ts",
-            "tsConfig": "projects/ng2-simple-global/tsconfig.spec.json",
-            "karmaConfig": "projects/ng2-simple-global/karma.conf.js"
+            "main": "projects/ngx-simple-global/src/test.ts",
+            "tsConfig": "projects/ngx-simple-global/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-simple-global/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ng2-simple-global/tsconfig.lib.json",
-              "projects/ng2-simple-global/tsconfig.spec.json"
+              "projects/ngx-simple-global/tsconfig.lib.json",
+              "projects/ngx-simple-global/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -160,5 +160,5 @@
         }
       }
     }},
-  "defaultProject": "ng2-simple-global-lib"
+  "defaultProject": "ngx-simple-global-lib"
 }
